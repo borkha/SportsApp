@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SFRound">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/sftool"
+        android:layout_width="match_parent"
+        android:background="#7CB342"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/sf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Semi Final Players "
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sftool">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/SFrecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/SfFloat"
+            android:layout_width="wrap_content"
+            android:layout_height="98dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="480dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginBottom="54dp"
+            android:backgroundTint="#7CB342"
+            android:src="@drawable/ic_match"
+            app:borderWidth="0dp" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

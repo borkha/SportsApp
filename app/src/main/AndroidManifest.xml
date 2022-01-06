@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="nic.com.sportsapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SportsApp">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:parentActivityName=".SplashScreen"/>
+        <activity android:name=".AdminActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RegisterAdmin" android:parentActivityName=".AdminActivity"/>
+        <activity android:name=".AdminDashboard" android:parentActivityName=".AdminActivity"/>
+        <activity android:name=".PlayerLogin" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RegisterPlayer" android:parentActivityName=".PlayerLogin"/>
+        <activity android:name=".PlayerDashboard" android:parentActivityName=".PlayerLogin"/>
+        <activity android:name=".EditPlayerProfile" android:parentActivityName=".PlayerDashboard"/>
+        <activity android:name=".NotificationsPlayerDash" android:parentActivityName=".PlayerDashboard"/>
+        <activity android:name=".RegistrationLinkPlayer" android:parentActivityName=".NotificationsPlayerDash"/>
+        <activity android:name=".EventActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ScoreActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".SelectedListPlayers" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".WinnerListActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ManageActivity" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".PlayersView" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".FirstRoundPlayers" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".FirstRScores" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".AddEventDetails" android:parentActivityName=".ManageActivity"/>
+        <activity android:name=".PlayersDetails" android:parentActivityName=".PlayersView"/>
+        <activity android:name=".GroupsFirstRound" android:parentActivityName=".FirstRoundPlayers"/>
+        <activity android:name=".GroupA" android:parentActivityName=".GroupsFirstRound"/>
+        <activity android:name=".GroupB" android:parentActivityName=".GroupsFirstRound"/>
+        <activity android:name=".FloatingActivitygrpA" android:parentActivityName=".GroupA"/>
+        <activity android:name=".FloatingActivitygrpB" android:parentActivityName=".GroupB"/>
+        <activity android:name=".QFRound" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".QFScore" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".SFRound" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".SFScore" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".QFfloating" android:parentActivityName=".QFRound"/>
+        <activity android:name=".SFfloating" android:parentActivityName=".SFRound"/>
+        <activity android:name=".PMRound" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".PMScore" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".PmFloating" android:parentActivityName=".PMRound"/>
+        <activity android:name=".FinalRound" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".FinalScore" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".FFloating" android:parentActivityName=".FinalRound"/>
+        <activity android:name=".ThirdPRound" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".ThirdPScore" android:parentActivityName=".AdminDashboard"/>
+        <activity android:name=".ThFloating" android:parentActivityName=".ThirdPRound"/>
+        <activity android:name=".SelectedListPlayers2" android:parentActivityName=".SelectedListPlayers"/>
+        <activity android:name=".QFRoundList" android:parentActivityName=".SelectedListPlayers2"/>
+        <activity android:name=".SFRoundList" android:parentActivityName=".SelectedListPlayers2"/>
+        <activity android:name=".ThirdPRoundList" android:parentActivityName=".SelectedListPlayers2"/>
+        <activity android:name=".PMRoundList" android:parentActivityName=".SelectedListPlayers2"/>
+        <activity android:name=".FinalRoundList" android:parentActivityName=".SelectedListPlayers2"/>
+        <activity android:name=".EventPlayerList2" android:parentActivityName=".EventActivity"/>
+        <activity android:name=".FirstclassActivity" android:parentActivityName=".EventPlayerList2"/>
+        <activity android:name=".QuartclassActivity" android:parentActivityName=".EventPlayerList2"/>
+        <activity android:name=".SemiclassActivity" android:parentActivityName=".EventPlayerList2"/>
+        <activity android:name=".PayclassActivity" android:parentActivityName=".EventPlayerList2"/>
+        <activity android:name=".ThirdclassActivity" android:parentActivityName=".EventPlayerList2"/>
+        <activity android:name=".FinalclassActivity" android:parentActivityName=".EventPlayerList2"/>
+        <activity android:name=".FirstclassGroupA" android:parentActivityName=".FirstclassActivity"/>
+        <activity android:name=".FirstclassGroupB" android:parentActivityName=".FirstclassActivity"/>
+        <activity android:name=".ScorePlayerList2" android:parentActivityName=".ScoreActivity"/>
+        <activity android:name=".FirstclassScore" android:parentActivityName=".ScorePlayerList2"/>
+        <activity android:name=".QuartclassScore" android:parentActivityName=".ScorePlayerList2"/>
+        <activity android:name=".SemiclassScore" android:parentActivityName=".ScorePlayerList2"/>
+        <activity android:name=".ThirdclassScore" android:parentActivityName=".ScorePlayerList2"/>
+        <activity android:name=".PayclassScore" android:parentActivityName=".ScorePlayerList2"/>
+        <activity android:name=".FinalclassScore" android:parentActivityName=".ScorePlayerList2"/>
+        <activity android:name=".FirstclassScoreGroupA" android:parentActivityName=".FirstclassScore"/>
+        <activity android:name=".FirstclassScoreGroupB" android:parentActivityName=".FirstclassScore"/>
+        <activity android:name=".WinnerList2" android:parentActivityName=".WinnerListActivity"/>
+        <activity android:name=".ContactActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".ForgotPassword" android:parentActivityName=".PlayerLogin"/>
+
+    </application>
+
+</manifest>

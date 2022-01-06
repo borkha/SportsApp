@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
+    </group>
+
+
+        <item
+
+            android:title="Profiles">
+            <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_playerlog"
+                    android:title="Player" />
+                <item
+                    android:id="@+id/nav_admin"
+                    android:icon="@drawable/ic_admin_panel"
+                    android:title="Admin" />
+                </group>
+            </menu>
+
+        </item>
+
+
+    <item android:title="Communicate">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share"
+                android:icon="@drawable/ic_share"/>
+            <item
+                android:id="@+id/nav_contact"
+                android:title="Contact Us"
+                android:icon="@drawable/ic_contact"/>
+        </menu>
+
+    </item>
+</menu>

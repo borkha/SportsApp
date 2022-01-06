@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_nav"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/notify"
+            android:title="Notifications"
+            android:icon="@drawable/ic_player_notifications"/>
+        <item
+            android:id="@+id/nav_etProfile"
+            android:title="Edit Profile"
+            android:icon="@drawable/ic_player_profile_edit"/>
+
+    </group>
+
+
+    <item
+        android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_log"
+                    android:title="Login"
+                    android:icon="@drawable/ic_login"/>
+                <item
+                    android:id="@+id/nav_out"
+                    android:title="Logout"
+                    android:icon="@drawable/ic_logout"/>
+
+            </group>
+        </menu>
+
+    </item>
+
+
+    <item android:title="Communicate"
+        tools:ignore="HardcodedText">
+
+        <menu>
+            <item
+                android:id="@+id/nav_queries"
+                android:title="Queries"
+                android:icon="@drawable/ic_contact"/>
+
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ThirdPRoundList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Thtool"
+        android:layout_width="match_parent"
+        android:background="#7CB342"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/ThTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected players to play Third Position"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Thtool">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/ThRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
